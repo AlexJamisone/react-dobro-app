@@ -1,0 +1,31 @@
+.app {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.app-bg-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.app-bg-right {
+    position: absolute;
+    top: 0;
+    right: -75%;
+    z-index: 1;
+    
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }

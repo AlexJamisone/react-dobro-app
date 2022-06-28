@@ -4,11 +4,11 @@ import './CardList.scss'
 const CardList = ({ data }) => {
   return (
     <>
-        {
-            data.map((item, index) => {
-                return <Card key={index} data={item}/>
-            })
-        }
+      {
+        data.map((item, index) => {
+            return <Card key={index} data={item}/>
+        })
+      }
     </>
   )
 }

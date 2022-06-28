@@ -8,15 +8,20 @@ function App() {
 	return (
 		<div className="app">
 			<motion.div
-				ami
+				initial={{ scale: 1.2, opacity: 0}}
+				animate={{ scale: 1, opacity: 1}}
+				transition={{ duration: 1.5}}
 				className="app-bg-left"
 				style={{ backgroundImage: `url(${bgLeft})`}}
 			> 	
 			</motion.div>
-			<div 
+			<motion.div
+				initial={{ scale: 1.1, opacity: 0, rotateY: 10}}
+				animate={{ scale: 1, opacity: 1, rotateY: 0}}
+				transition={{ duration: 2, delay: .5}}
 				className="app-bg-right"
 				style={{ backgroundImage: `url(${bgRight})`}}
-			></div>
+			></motion.div>
 			<NavBar/>
 			<Content/>
 		</div>

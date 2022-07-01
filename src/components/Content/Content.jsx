@@ -21,8 +21,8 @@ const Content = () => {
 
 		axios.get(api_url)
 			.then(res => {
-			const data = res.data.data.coffee
-			setData(data)
+				const data = res.data.data.coffee
+				setData(data)
 			})
 			.catch(err => console.log(err))
 	}, [])

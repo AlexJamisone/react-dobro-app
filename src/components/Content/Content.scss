@@ -2,14 +2,21 @@
     min-width: 440px;
     min-height: 435px;
     max-height: 435px;
-
+    
     position: relative;
     z-index: 100;
-
-    overflow-x: hidden;
-
-    scrollbar-width: none;
     
+    overflow-x: hidden;
+    
+    scrollbar-width: none;
+    width: 100%;
+    
+    @media screen and (max-width: 670px) {
+        min-width: 20rem;
+    }
+    @media screen and (max-width: 375px) {
+        z-index: 101;
+    }
 }
 
 
@@ -38,5 +45,10 @@
     
         width: 100%;
         height: 5rem;
+
+        @media screen and (max-width: 420px) {
+            z-index: -1;
+        }
     }
+
 }

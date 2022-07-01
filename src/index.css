@@ -25,5 +25,10 @@ body {
   --primary-golden: #BFA784;
   --primary-type: #46484E;
   --primary-gray: #7c7c7c;
+  --bg-color: #FFF7F2
 }
 
+
+@viewport {
+  user-zoom: fixed;
+}

@@ -1,7 +1,7 @@
 import React, {useState, useEffect } from 'react'
 import axios from 'axios';
 import SearchBar from '../SearchBar/SearchBar';
-import CardList from '../CardList/CardList';
+import CardList from './CardList/CardList';
 
 import './Content.scss'
 
@@ -46,7 +46,7 @@ const Content = () => {
 	return (
 		<>
 			<SearchBar onChengeHendler={onSearchChange}/>
-				<div className="blure">
+				<div className="content-blure">
 					<div className="content-container">
 						<CardList data={filterData}/>
 					</div>

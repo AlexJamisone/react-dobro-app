@@ -1,0 +1,25 @@
+.burger-list {
+    position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 230px;
+        z-index: 1000;
+    @media screen and (min-width: 1225px) {
+        display: none;
+    }
+    @media screen and (max-width: 420px) {
+        bottom: -15%;
+    }
+    li {
+        list-style: none;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: right;
+        cursor: pointer;
+        @media screen and (max-width: 420px) {
+            justify-content: center;
+        }
+    }
+}

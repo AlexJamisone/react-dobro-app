@@ -1,5 +1,4 @@
 import './App.scss';
-import { Content, NavBar} from './components/index'
 
 //Destop BG
 import bgLeft from './assets/leftBG-1.png'
@@ -9,6 +8,7 @@ import bgRight from './assets/rightBG-1.png'
 import mobileLeftBG from './assets/leftBG.png'
 import mobileRightBG from './assets/rightBG.png'
 import { motion } from "framer-motion";
+import { MainContent, Navigation, Spinner} from './components/index';
 
 function App() {
 	return (
@@ -45,8 +45,9 @@ function App() {
 					style={{ backgroundImage: `url(${mobileRightBG})`}}
 				></motion.div>
 			</div>
-			<NavBar/>
-			<Content/>
+			{/* <Spinner/> */}
+			<Navigation/>
+			<MainContent/>
 		</div>
 	);
 }

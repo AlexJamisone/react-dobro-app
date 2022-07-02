@@ -1,0 +1,13 @@
+.logo-yandex {
+    cursor: pointer;
+    transition: all .2s ease-in-out, fill .2s linear;
+
+    &:hover {
+        scale: 1.2;
+        filter: drop-shadow(4px 4px 4px var(--primary-gray));
+    }
+
+    @media screen and (max-width: 1225px) {
+        display: none;
+    }
+}

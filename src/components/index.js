@@ -1,2 +1,3 @@
-export {default as Content} from './Content/Content'
-export {default as NavBar} from './NavBar/NavBar'
+export {default as MainContent} from './MainContent/Content'
+export {default as Navigation} from './Navigation/Navigation'
+export {default as Spinner} from './Spinner/Spinner'

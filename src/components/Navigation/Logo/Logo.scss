@@ -1,6 +1,8 @@
 .logo {
     margin: 4rem;
     cursor: pointer;
+    width: 100%;
+    height: auto;
 
     path:nth-child(10) {
         animation: blink .5s ease-in-out 2, movi 3s ease-in-out 1.5s infinite;
@@ -27,6 +29,10 @@
         50% {
             transform: translateX(-5%);    
         }
+    }
+
+    @media screen and (max-width: 670px) {
+        margin: 1rem;
     }
 
     @media screen and (max-width: 420px) {

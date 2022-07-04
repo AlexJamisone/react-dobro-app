@@ -1,5 +1,6 @@
 import * as React from "react";
 import { motion } from "framer-motion";
+import { Link } from 'react-router-dom'
 
 import './MenuItems.scss'
 
@@ -22,7 +23,7 @@ const variants = {
 
 const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
 
-export const MenuItem = ({ i }) => {
+export const MenuItem = ({ i, pth }) => {
 	const style = { border: `2px solid ${colors[i]}` };
 
 	return (
@@ -32,7 +33,8 @@ export const MenuItem = ({ i }) => {
 			whileTap={{ scale: 0.95 }}
 		>
 			<div className="burger-item" style={style}>
-				<p className="burger-item-text">{i}</p> 
+				<Link to={pth} className="burger-item-text">{i}</Link> 
+				
 			</div>
 		</motion.li>
 	);

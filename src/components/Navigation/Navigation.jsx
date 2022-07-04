@@ -1,4 +1,5 @@
 import React, { useRef } from 'react'
+import { Link } from 'react-router-dom'
 import { motion, useCycle } from "framer-motion";
 
 //NavItem ~ Desktop
@@ -23,9 +24,9 @@ const NavBar = () => {
 		animate={isOpen ? "open" : "closed"}
 		ref={containerRef}
 		>
-			<Tasty/>
-			<Logo/>
-			<Yandex/>
+			<Link to='/'><Tasty/></Link>
+			<Link to='/'><Logo/></Link>
+			<Link to='/yandex'><Yandex/></Link>
 		
 			<BurgerNav />
 			<MenuToggle toggle={() => toggleOpen()} />

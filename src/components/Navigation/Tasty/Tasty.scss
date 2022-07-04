@@ -3,7 +3,7 @@
     transition: all .2s ease-in-out;
 
     &:hover {
-        scale: 1.2;
+        transform: scale(1.2);
         filter: drop-shadow(4px 4px 4px var(--primary-gray));
     }
 

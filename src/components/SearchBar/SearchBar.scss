@@ -60,29 +60,29 @@
         }
     }
     
-    &-input-label {
-        font-family: var(--font-base);
-        font-size: 1rem;
-        color: var(--primary-gray);
-        
-        cursor: text;
-        
-        padding: 0 0.5rem;
-        
-        position: absolute;
-        top: .6rem;
-        right: 53%;
-        
-        transition: 
-        top .2s ease-in,
-            left .2s ease-in,
-            font-size .2s ease-in;
-            background-color: #FFF7F2;
+        &-input-label {
+            font-family: var(--font-base);
+            font-size: 1rem;
+            color: var(--primary-gray);
+            
+            cursor: text;
+            
+            padding: 0 0.5rem;
+            
+            position: absolute;
+            top: .6rem;
+            right: 53%;
+            
+            transition: 
+            top .2s ease-in,
+                left .2s ease-in,
+                font-size .2s ease-in;
+                background-color: #FFF7F2;
 
-            @media screen and (max-width: 670px) {
-                font-size: 0.8rem;
-                padding: 0 .2rem;
-            }
+                @media screen and (max-width: 670px) {
+                    font-size: 0.8rem;
+                    padding: 0 .2rem;
+                }
         }
         
     }

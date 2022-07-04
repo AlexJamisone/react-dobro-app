@@ -9,8 +9,9 @@ const Spinner = () => {
 		<>
 			<motion.div
 				className='spinner'
-				animate={{rotate: 360}}
-				transition={{ type: 'spring', repeat: 'Infinity'}}
+				initial={{ y: -200, opacity: 0}}
+				animate={{rotate: 360, y: [-200, 50, -200, 50], opacity: 1}}
+				transition={{ type: 'spring', repeat: 'Infinity', duration: 4}}
 			>
 				<SpinnerSVG/>
 			</motion.div>

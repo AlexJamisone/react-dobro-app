@@ -5,7 +5,16 @@ import { MenuItem } from './MenuItem/MenuItem';
 import './BurgerNav.scss'
 
 const BurgerNav = () => {
-    const itemIds = ['Кофе', 'Яндекс']  
+    const itemIds = [
+        {
+            name: 'Кофе',
+            path: '/'
+        },
+        {
+            name: 'Яндекс',
+            path: '/yandex'
+        },
+    ]  
     const variants = {
         open: {
             transition: { staggerChildren: 0.07, delayChildren: 0.2 }
@@ -22,7 +31,7 @@ const BurgerNav = () => {
             className='burger-list'
         >
             {itemIds.map(i => (
-                <MenuItem i={i} key={i} />
+                <MenuItem i={i.name} key={i.name} pth={i.path}/>
             ))}
         </motion.ul>
     )

@@ -7,13 +7,14 @@ import './YandexReviews.scss'
 
 const YandexReviews = () => {
 	return (
-		<>
+		<div className='app-yandex'>
 			<Background/>
 			<Navigation/>
 			<motion.div
 				initial={{y: 200, opacity: 0}}
 				animate={{y: 0, opacity: 1}}
 				transition={{ duration: 2}}
+				style={{zIndex: 1010}}
 			>
 				<div className="yandex-container">
 					<div 
@@ -35,7 +36,7 @@ const YandexReviews = () => {
 					</div>
 				</div>
 			</motion.div>
-		</>
+		</div>
 	)
 }
 

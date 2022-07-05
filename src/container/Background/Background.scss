@@ -32,6 +32,7 @@
 
     @media screen and (max-width: 420px) {
         &-mobile {
+            top: 30px;
             left: -5%;
         }
     }
@@ -69,10 +70,16 @@
             background-repeat: no-repeat;
         }
     }
+    @media screen and (max-width: 420px) {
+        &-mobile {
+            top: 100px;
+            right: -5%;
+        }
+    }
 
     @media screen and (max-width: 375px) {
         &-mobile {
-            top: 0;
+            top: 100px;
             right: -5%;
         }
     }

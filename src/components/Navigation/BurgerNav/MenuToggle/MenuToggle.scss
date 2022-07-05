@@ -14,14 +14,7 @@
 
     @media screen and (max-width: 1225px) {
         display: flex;
-    }
-    @media screen and (max-width: 420px) {
-        margin: 2rem 5rem 0 0;
-        display: flex;
         justify-content: center;
-        align-items: center;
-    }
-    @media screen and (max-width: 375px) {
-        margin: 3rem 3rem 0 0;
+        margin: 2rem 5rem 0 0;
     }
 }

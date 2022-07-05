@@ -8,6 +8,17 @@
     }
 }
 
+.app-yandex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+
+    @media screen and (max-width: 375px) {
+        overflow: hidden;
+    }
+}
+
 ::-webkit-scrollbar {
     display: none;
   }

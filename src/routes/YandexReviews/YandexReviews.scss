@@ -3,13 +3,25 @@
     justify-content: center;
     align-items: center;
     z-index: 1010;
+
+    overflow: hidden;
+
 }
 .yandex {
+
     width: 560px;
     height: 650px;
     overflow: hidden;
     position: relative;
     z-index: 1010;
+
+    @media screen and (max-width: 650px) {
+        width: 75%;
+        margin-top: 1.5rem;
+    }
+    @media screen and (max-width: 375px) {
+        width: 80%;
+    }
 }
 
 

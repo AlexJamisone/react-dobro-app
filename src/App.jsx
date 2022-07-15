@@ -1,5 +1,6 @@
 import './App.scss';
 import { MainContent, Navigation} from './components/index';
+import LinkToApp from './components/LinkToApp/LinkToApp';
 import Background from './container/Background/Background';
 
 
@@ -9,6 +10,7 @@ function App() {
 			<Background/>
 			<Navigation/>
 			<MainContent/>
+			<LinkToApp/>
 		</div>
 	);
 }

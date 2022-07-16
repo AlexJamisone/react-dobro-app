@@ -26,7 +26,7 @@ const LinkToApp = () => {
 				whileHover={{scale: 1.1}}
 				transition={{type: "spring"}}
 				className='link-appStore'
-				href='https://play.google.com/store/apps/details?id=ru.quickresto.loyalty.dobrocoffeecr'
+				href='https://apps.apple.com/ru/app/dobro-%D0%BA%D0%BE%D1%84%D0%B5/id1594161361'
 				target='_blank'
 				rel='noreferrer'
 				

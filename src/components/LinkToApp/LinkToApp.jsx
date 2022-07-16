@@ -1,20 +1,30 @@
 import './LinkToApp.scss'
 import PlayStore from '../../assets/googleplay.png'
 import AppStore from '../../assets/appstore.png'
+import { motion } from 'framer-motion'
 
 const LinkToApp = () => {
 	return (
-		<div className='link-container'>
+		<motion.div 
+			className='link-container'
+			initial={{y: 100, opacity: 0}}
+			animate={{y: 0, opacity: 1}}
+			transition={{duration: 1, type: "spring"}}
+		>
 		<h1 className='link-text'> Привет, у нас появилось приложение с доставкой!</h1>
-			<a 
+			<motion.a 
+				whileHover={{scale: 1.1}}
+				transition={{type: "spring"}}
 				className='link-playStore'
 				href='https://play.google.com/store/apps/details?id=ru.quickresto.loyalty.dobrocoffeecr'
 				target='_blank'
 				rel='noreferrer'
 			>
 				<img src={PlayStore} alt="Play Market" />
-			</a>
-			<a 
+			</motion.a>
+			<motion.a
+				whileHover={{scale: 1.1}}
+				transition={{type: "spring"}}
 				className='link-appStore'
 				href='https://play.google.com/store/apps/details?id=ru.quickresto.loyalty.dobrocoffeecr'
 				target='_blank'
@@ -22,8 +32,8 @@ const LinkToApp = () => {
 				
 			>
 				<img src={AppStore} alt="Play Market" />
-			</a>
-		</div>
+			</motion.a>
+		</motion.div>
 
 	)
 }

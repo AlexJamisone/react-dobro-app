@@ -9,17 +9,17 @@ const TipsCard = () => {
 	const barista = [
 		{
 			name: 'Саша',
-			link: 'https://www.tinkoff.ru/collectmoney/crowd/pakhotin.aleksey4/gTNEd70613/?short_link=YYhHDz02Yo&httpMethod=GET',
+			link: 'https://google.com',
 			avatar: avatar1
 		},
 		{
 			name: 'Оля',
-			link: 'https://www.tinkoff.ru/collectmoney/crowd/pakhotin.aleksey4/gTNEd70613/?short_link=YYhHDz02Yo&httpMethod=GET',
+			link: 'https://www.tinkoff.ru/cf/7dzSVcZ5gpW',
 			avatar: avatar2
 		},
 		{
 			name: 'Лёша',
-			link: 'https://www.tinkoff.ru/collectmoney/crowd/pakhotin.aleksey4/gTNEd70613/?short_link=YYhHDz02Yo&httpMethod=GET',
+			link: 'https://www.tinkoff.ru/cf/5Y94azSjVDD',
 			avatar: avatar3
 		},
 	]
@@ -28,7 +28,11 @@ const TipsCard = () => {
 			{barista.map((person, index) => {
 				const { name, link, avatar } = person
 				return (
-					<a 
+					<motion.a 
+						initial={{y: 100, opacity: 0}}
+						animate={{y: 0, opacity: 1}}
+						whileHover={{scale: 1.1}}
+						transition={{type: 'spring',}}
 						href={link}
 						target='_blank'
 						rel='noreferrer'
@@ -45,7 +49,7 @@ const TipsCard = () => {
 						>
 							{name}
 						</h1>
-					</a>
+					</motion.a>
 				)
 					
 			})}		

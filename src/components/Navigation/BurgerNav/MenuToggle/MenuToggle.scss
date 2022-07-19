@@ -7,7 +7,7 @@
     top: 18px;
     left: 15px;
     width: 50px;
-    height: 50px;
+    height: 20px;
     border-radius: 50%;
     background: transparent;
     z-index: 1000;
@@ -15,6 +15,6 @@
     @media screen and (max-width: 1225px) {
         display: flex;
         justify-content: center;
-        margin: 2rem 5rem 0 0;
+        margin: 0 5rem 0 0;
     }
 }

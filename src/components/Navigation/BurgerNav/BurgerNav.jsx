@@ -14,6 +14,10 @@ const BurgerNav = () => {
             name: 'Яндекс',
             path: '/yandex'
         },
+        {
+            name: 'Чаевые',
+            path: '/tips'
+        }
     ]  
     const variants = {
         open: {

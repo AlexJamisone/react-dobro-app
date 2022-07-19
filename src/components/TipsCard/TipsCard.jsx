@@ -1,15 +1,15 @@
 import './TipsCard.scss'
 import { motion } from 'framer-motion'
-import avatar1 from '../../assets/avatar/avatar1.png'
-import avatar2 from '../../assets/avatar/avatar2.png'
-import avatar3 from '../../assets/avatar/avatar3.png'
+import avatar1 from '../../assets/avatar/sasha.png'
+import avatar2 from '../../assets/avatar/oli.png'
+import avatar3 from '../../assets/avatar/alex.png'
 
 
 const TipsCard = () => {
 	const barista = [
 		{
 			name: 'Саша',
-			link: 'https://google.com',
+			link: 'https://www.tinkoff.ru/cf/142W441ULA3',
 			avatar: avatar1
 		},
 		{

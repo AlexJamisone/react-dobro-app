@@ -24,9 +24,10 @@
         height: 250px;
     }
     @media screen and (max-width: 420px) {
-        width: 200px;
-        height: 200px;
+        width: 160px;
+        height: 160px;
         font-size: 0.7rem;
+        margin: .3rem 0;
     }
     @media screen and (max-width: 375px) {
         width: 170px;

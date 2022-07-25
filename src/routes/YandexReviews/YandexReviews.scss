@@ -19,9 +19,13 @@
         width: 75%;
         margin-top: 1.5rem;
     }
+    @media screen and (max-width: 420px) {
+        width: 75%;
+        height: 475px;
+        margin: 0;
+    }
     @media screen and (max-width: 375px) {
         width: 80%;
-        height: 500px;
     }
 }
 

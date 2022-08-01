@@ -1,24 +1,23 @@
 .nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 1000;
-    
-    .svg {
-        fill: var(--primary-black);
-    }
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 1000;
 
-    @media screen and (max-width: 670px) {
-        width: 100%;
-        height: auto;
-        margin-bottom: 2rem;
-    }
+	.svg {
+		fill: var(--primary-black);
+	}
 
-    @media screen and (max-width: 375px) {
-        width: 100%;
-        height: auto;
-        margin-bottom: 2.5rem;
-    }
-    
+	@media screen and (max-width: 670px) {
+		width: 100%;
+		height: auto;
+		margin-bottom: 2rem;
+	}
+
+	@media screen and (max-width: 375px) {
+		width: 100%;
+		height: auto;
+		margin-bottom: 2.5rem;
+	}
 }

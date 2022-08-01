@@ -4,15 +4,15 @@ import { Navigation } from '../../components'
 import TipsCard from '../../components/TipsCard/TipsCard'
 
 const Tips = () => {
-  return (
-    <div>
-        <Background/>
-        <Navigation/>
-        <div className="tips-container">
-            <TipsCard/>
-        </div>
-    </div>
-  )
+	return (
+		<div>
+			<Background />
+			<Navigation />
+			<div className="tips-container">
+				<TipsCard />
+			</div>
+		</div>
+	)
 }
 
 export default Tips

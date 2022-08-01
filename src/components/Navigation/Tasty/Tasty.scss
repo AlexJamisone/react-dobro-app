@@ -1,15 +1,15 @@
 .logo-tasty {
-    cursor: pointer;
-    transition: all .2s ease-in-out;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
 
-    &:hover {
-        scale: 1.2;
-        filter: drop-shadow(4px 4px 4px var(--primary-gray));
-    }
+	&:hover {
+		scale: 1.2;
+		filter: drop-shadow(4px 4px 4px var(--primary-gray));
+	}
 
-    svg {
-        @media screen and (max-width: 1225px) {
-            display: none;
-        }
-    }
+	svg {
+		@media screen and (max-width: 1225px) {
+			display: none;
+		}
+	}
 }

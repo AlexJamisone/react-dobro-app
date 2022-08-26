@@ -18,7 +18,7 @@ const Content = () => {
 
 	useEffect(() => {
 		const api_url =
-			'https://wrapapi.com/use/alexjamison/homeit/all/latest?wrapAPIKey=HCTPpA928xiR2xIr0ON2HkyaS8gKg4Lz'
+			'https://wrapapi.com/use/alexjamison/homeit/cart/latest?wrapAPIKey=HCTPpA928xiR2xIr0ON2HkyaS8gKg4Lz'
 		setLoading(true)
 		axios
 			.get(api_url)
